@@ -148,10 +148,7 @@ final class Base extends Prefab implements ArrayAccess {
 	*	@return array
 	*	@param $key string
 	**/
-	private function cut($key) {
-		return preg_split('/\[\h*[\'"]?(.+?)[\'"]?\h*\]|(->)|\./',
-			$key,NULL,PREG_SPLIT_NO_EMPTY|PREG_SPLIT_DELIM_CAPTURE);
-	}
+	
 
 	/**
 	*	Replace tokenized URL with available token values
@@ -2231,8 +2228,7 @@ final class Base extends Prefab implements ArrayAccess {
 	}
 
 	//! Prohibit cloning
-	private function __clone() {
-	}
+	
 
 	//! Bootstrap
 	function __construct() {
@@ -3484,12 +3480,10 @@ final class Registry {
 	}
 
 	//! Prohibit cloning
-	private function __clone() {
-	}
+	
 
 	//! Prohibit instantiation
-	private function __construct() {
-	}
+	
 
 }
 

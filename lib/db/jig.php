@@ -145,8 +145,7 @@ class Jig {
 	}
 
 	//! Prohibit cloning
-	private function __clone() {
-	}
+	
 
 	/**
 	*	Instantiate class
